@@ -12,13 +12,6 @@ import {
 } from '@material-ui/core'
 import {stateToHTML} from 'draft-js-export-html';
 import {stateFromHTML} from 'draft-js-import-html';
-import ImageSearchIcon from '@material-ui/icons/ImageSearch'
-import StoreIcon from '@material-ui/icons/Store'
-// import {
-//   ShopCard, ShopSearchModal, AssetModal, 
-//   ShopIntroductionModal, ShopIntro,
-// } from './components'
-// import {generateShopIntro} from './components/ShopIntro'
 
 import {exportOptions, importOptions} from './utils'
 
@@ -84,7 +77,6 @@ export default ({
   const input = stateFromHTML(value, importOptions)
   const inputRaw = useMemo(()=>convertToRaw(input), [input])
 
-  // console.log("inputRaw", value && value)
   const render = (
     <MuiThemeProvider
       theme={innerTheme}

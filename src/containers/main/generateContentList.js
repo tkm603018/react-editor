@@ -8,12 +8,11 @@ import {
 
 import NewIconButton from '../../components/newIconButton'
 import NewHoverActions from '../../components/newHoverActions'
-import { LocalConvenienceStoreOutlined } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
-    overflowY: 'scroll',
+    // overflowY: 'scroll',
   },
   paper: {
     maxWidth: '100%',
@@ -31,13 +30,11 @@ const useStyles = makeStyles((theme) => ({
   singleLineGridList: {
     display: 'flex',
     flexWrap: 'wrap',
-    // justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },
   gridList: {
     flexWrap: 'nowrap',
-    // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     transform: 'translateZ(0)',
   },
   title: {

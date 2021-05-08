@@ -12,34 +12,19 @@ import PaneToolbar from './paneToolbar'
 import GenerateContentList from './generateContentList'
 import ContentForm from '../../components/contentForm'
 
-const message = `Truncation should be conditionally applicable on this long line of text
- as this is a much longer line than what the container can support.
-Truncation should be conditionally applicable on this long line of text
- as this is a much longer line than what the container can support.
- `
-
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    // overflow: 'hidden',
     padding: theme.spacing(0, 3),
     height: '100%',
   },
-  paper: {
-    maxWidth: '100%',
-    margin: `${theme.spacing(1)}px auto`,
-    padding: theme.spacing(2),
-  },
   list: {
-    maxHeight: '1230px',
-    // position: 'absolute',
-    // bottom: '0px',
+    height: `${window.innerHeight}px`,
   },
   listBox: {
     width: '100%',
-    height: '950px',
+    height: `${window.innerHeight * 0.73}px`,
     overflowY: 'scroll',
-    // flexDirection: 'column-reverse',
   }
 }));
 
@@ -53,10 +38,8 @@ export default ({ ...props }) => {
       <ContentForm {...props}></ContentForm>
       <Grid container
         className={classes.listBox}
-        // style={{}}
         alignItems="flex-start"
         justify="center"
-        // direction="row-reverse"
       >
         <GenerateContentList
           {...props}

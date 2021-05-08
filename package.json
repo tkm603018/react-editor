@@ -1,0 +1,64 @@
+{
+  "name": "flex",
+  "version": "0.1.0",
+  "private": true,
+  "dev": "webpack-dev-server --open --hot",
+  "dependencies": {
+    "@draft-js-plugins/buttons": "^4.1.0",
+    "@draft-js-plugins/editor": "^4.1.0",
+    "@draft-js-plugins/static-toolbar": "^4.1.0",
+    "@giphy/js-fetch-api": "^2.4.0",
+    "@giphy/react-components": "^2.3.2-alpha.1",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@syncfusion/ej2-react-layouts": "^18.4.44",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "array-move": "^3.0.1",
+    "draft-js": "^0.11.7",
+    "draft-js-export-html": "^1.4.1",
+    "draft-js-import-html": "^1.4.1",
+    "emoji-picker-react": "^3.4.2",
+    "firebase": "^8.2.10",
+    "firebaseui": "^4.8.0",
+    "html-react-parser": "^1.2.4",
+    "i": "^0.3.6",
+    "material-ui-popup-state": "^1.7.2",
+    "mui-rte": "^1.26.2",
+    "npm": "^7.6.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-dropzone": "^11.3.2",
+    "react-infinite-scroller": "^1.2.4",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "react-smooth-dnd": "^0.11.1",
+    "react-split-pane": "^0.1.92",
+    "unstated-next": "^1.1.0",
+    "usetheform": "^3.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

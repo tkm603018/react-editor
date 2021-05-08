@@ -1,0 +1,158 @@
+{
+  "result": "CARD_FOUND",
+  "card": {
+    "name": "player",
+    "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0&t=984s",
+    "card_type_url": "http://card-type-url-is-deprecated.invalid",
+    "binding_values": {
+      "vanity_url": {
+        "type": "STRING",
+        "string_value": "youtube.com",
+        "scribe_key": "vanity_url"
+      },
+      "player_url": {
+        "type": "STRING",
+        "string_value": "https://www.youtube.com/embed/Ke90Tje7VS0?start=984"
+      },
+      "app_is_free": { "type": "STRING", "string_value": "true" },
+      "app_price_currency": { "type": "STRING", "string_value": "USD" },
+      "app_price_amount": { "type": "STRING", "string_value": "0.0" },
+      "domain": { "type": "STRING", "string_value": "www.youtube.com" },
+      "app_num_ratings": { "type": "STRING", "string_value": "17,956,153" },
+      "app_star_rating": { "type": "STRING", "string_value": "4.69771" },
+      "app_name": {
+        "type": "STRING",
+        "string_value": "YouTube: Watch, Listen, Stream"
+      },
+      "player_width": { "type": "STRING", "string_value": "1280" },
+      "player_height": { "type": "STRING", "string_value": "720" },
+      "site": {
+        "type": "USER",
+        "user_value": { "id_str": "10228272", "path": [] },
+        "scribe_key": "publisher_id"
+      },
+      "title": {
+        "type": "STRING",
+        "string_value": "React Tutorial for Beginners [React js]"
+      },
+      "description": {
+        "type": "STRING",
+        "string_value": "React Tutorial - Learn to build fast web apps with React (React js) from scratch.\ud83d\udd25 Want to master React? Get my React mastery course: http://bit.ly/2KVl2A3?..."
+      },
+
+      "player_image": {
+        "type": "IMAGE",
+        "image_value": {
+          "url": "https://i.ytimg.com/vi/Ke90Tje7VS0/maxresdefault.jpg",
+          "width": 280,
+          "height": 158,
+          "alt": null
+        }
+      },
+      "player_image_color": {
+        "type": "IMAGE_COLOR",
+        "image_color_value": {
+          "palette": [
+            {
+              "percentage": 61.56,
+              "rgb": { "red": 254, "green": 130, "blue": 125 }
+            },
+            {
+              "percentage": 23.39,
+              "rgb": { "red": 242, "green": 225, "blue": 218 }
+            },
+            {
+              "percentage": 10.43,
+              "rgb": { "red": 122, "green": 117, "blue": 131 }
+            },
+            {
+              "percentage": 2.65,
+              "rgb": { "red": 176, "green": 115, "blue": 113 }
+            },
+            {
+              "percentage": 1.19,
+              "rgb": { "red": 253, "green": 112, "blue": 108 }
+            }
+          ]
+        }
+      },
+      "player_image_original": {
+        "type": "IMAGE",
+        "image_value": {
+          "url": "https://pbs.twimg.com/card_img/1338803848819974145/MlFmy4RL?format=jpg&name=orig",
+          "width": 1280,
+          "height": 720,
+          "alt": null
+        }
+      },
+      "card_url": {
+        "type": "STRING",
+        "string_value": "https://www.youtube.com/watch?v=Ke90Tje7VS0&t=984s",
+        "scribe_key": "card_url"
+      }
+    },
+    "users": {
+      "10228272": {
+        "id": 10228272,
+        "id_str": "10228272",
+        "name": "YouTube",
+        "screen_name": "YouTube",
+        "location": "San Bruno, CA",
+        "url": "https://www.youtube.com/",
+        "description": "Like and subscribe.",
+        "protected": false,
+        "followers_count": 72647757,
+        "fast_followers_count": 0,
+        "normal_followers_count": 72647757,
+        "friends_count": 1160,
+        "listed_count": 78972,
+        "created_at": "Tue Nov 13 21:43:46 +0000 2007",
+        "favourites_count": 5251,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": true,
+        "statuses_count": 30161,
+        "media_count": 11618,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": true,
+        "profile_background_color": "AF0000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1308106203860529152/yOwTDF9G_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1308106203860529152/yOwTDF9G_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/10228272/1600711798",
+        "profile_link_color": "C9191D",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "pinned_tweet_ids": [1339749167623589889],
+        "pinned_tweet_ids_str": ["1339749167623589889"],
+        "has_custom_timelines": true,
+        "can_media_tag": true,
+        "followed_by": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false,
+        "advertiser_account_type": "none",
+        "advertiser_account_service_levels": [],
+        "business_profile_state": "none",
+        "translator_type": "regular",
+        "require_some_consent": false
+      }
+    },
+    "card_platform": {
+      "platform": {
+        "device": { "name": "Swift", "version": "12" },
+        "audience": { "name": "production", "bucket": null }
+      }
+    }
+  }
+}

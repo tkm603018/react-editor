@@ -12,11 +12,6 @@ import {
 } from '@material-ui/core'
 import {stateToHTML} from 'draft-js-export-html';
 import {stateFromHTML} from 'draft-js-import-html';
-import ImageSearchIcon from '@material-ui/icons/ImageSearch'
-import StoreIcon from '@material-ui/icons/Store'
-import AssetModal from './components/AssetModal'
-
-import NewSelectableImages from './components/newSelectableImages'
 
 import {exportOptions, importOptions} from './utils'
 
@@ -86,22 +81,6 @@ export default ({
     <MuiThemeProvider
       theme={innerTheme}
     >
-      {/* {modalKind === 'selectImages' && (
-        <NewSelectableImages
-          editorRef={ref}
-          assetsModule={assetsModule}
-          handleClose={()=>setEditorStateOfModal(null)}
-          editorState={modalEditorState} 
-          setContentState={setContentState} />
-      )}, */}
-      {modalKind === 'asset' && (
-        <AssetModal 
-          editorRef={ref}
-          assetsModule={assetsModule}
-          handleClose={()=>setEditorStateOfModal(null)}
-          editorState={modalEditorState} 
-          setContentState={setContentState} />
-      )}
       <MUIRichTextEditor
         id='contentIndex'
         ref={ref}
@@ -109,24 +88,6 @@ export default ({
         value={JSON.stringify(value ? inputRaw : raw)}
         toolbarButtonSize="small"
         controls={controls || defaultControls}
-        customControls={[
-          // {
-          //   name: "selectImages",
-          //   icon: <ImageSearchIcon />,
-          //   type: "callback",
-          //   onClick: (editorState, name, anchor) => {
-          //     setEditorStateOfModal(["selectImages", editorState])
-          //   }
-          // },
-          {
-            name: "asset",
-            icon: <ImageSearchIcon />,
-            type: "callback",
-            onClick: (editorState, name, anchor) => {
-              setEditorStateOfModal(["asset", editorState])
-            }
-          }
-        ]}
         onSave={(data)=>{
           const rawContent = JSON.parse(data)
           const cs = convertFromRaw(rawContent)

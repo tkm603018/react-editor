@@ -5,19 +5,13 @@ import {
   makeStyles, Paper, Grid, List, Typography
 } from '@material-ui/core';
 
-import './Body.css';
+// import './Body.css';
 import PaneToolbar from './paneToolbar'
 import GenerateContentList from './generateContentList'
 import GenerateThreadList from './generateThreadList'
 import ContentForm from '../../components/contentForm'
 import ThreadForm from '../../components/threadForm'
 import { DB } from '../../actions/firebase'
-
-const message = `Truncation should be conditionally applicable on this long line of text
- as this is a much longer line than what the container can support.
-Truncation should be conditionally applicable on this long line of text
- as this is a much longer line than what the container can support.
- `
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,23 +20,19 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(0, 3),
   },
   paper: {
-    maxWidth: '100%',
     margin: `${theme.spacing(1)}px auto`,
     padding: theme.spacing(2),
   },
   list: {
-    height: '1210px',
+    width: '100%',
+    height: `${window.innerHeight}px`,
   },
   listBox: {
-    height: '950px',
-    // maxHeight: '910px',
-    width: '100%',
+    height: `${window.innerHeight * 0.73}px`,
     overflowY: 'scroll',
   },
   thread: {
-    height: '950px',
-    // maxHeight: '910px',
-    width: '100%',
+    height: '100vh',
   },
 }));
 
@@ -68,18 +58,23 @@ export default ({ contents, setContents,...props }) => {
 
   return (
     <List className={classes.list}>
-      <SplitPane split="vertical" defaultSize="60%" primary="first">
-        <div style={{ height: '100%', width: '100%', padding: '0 10px 0 5px' }}>
+      <SplitPane
+        split="vertical"
+        maxSize={1600}
+        minSize={500}
+        defaultSize={window.innerWidth * 0.5}
+        // defaultSize={parseInt(localStorage.getItem("splitPos"), 10)}
+        onChange={(size) => localStorage.setItem("splitPos", size)}
+      >
+        <div style={{ height: '100%', padding: '0 10px 0 5px' }}>
           <PaneToolbar type={0}></PaneToolbar>
           <ContentForm
             {...props}
           ></ContentForm>
           <Grid container
             className={classes.listBox}
-            // style={{}}
             alignItems="flex-start"
             justify="center"
-            // direction="row-reverse"
           >
             <GenerateContentList
               {...props}
@@ -87,24 +82,20 @@ export default ({ contents, setContents,...props }) => {
           </Grid>
         </div>
 
-        <div style={{ height: '100%', width: '100%', padding: '0 5px 0 10px', }}>
+        <div style={{ height: '100%', padding: '0 5px 0 10px'}}>
           <PaneToolbar {...props} type={1} title={"Thread  "}></PaneToolbar>
-          <div style={{ overflowY: 'scroll', }}>
             <ThreadForm
               {...props}
             ></ThreadForm>
             <Grid container
               className={classes.thread}
-              // style={{}}
               alignItems="flex-start"
               justify="center"
-              // direction="row-reverse"
             >
               <GenerateThreadList
                 {...props}
               ></GenerateThreadList>
             </Grid>
-          </div>
         </div>
       </SplitPane>
     </List>
